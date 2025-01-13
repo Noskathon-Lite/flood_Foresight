@@ -1,0 +1,707 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.chat_app_dexkor"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\debug\AndroidManifest.xml:6:22-64
+16
+17    <queries>
+17-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\main\AndroidManifest.xml:46:5-51:15
+18        <intent>
+18-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\main\AndroidManifest.xml:47:9-50:18
+19            <action android:name="android.intent.action.PROCESS_TEXT" />
+19-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\main\AndroidManifest.xml:48:13-72
+19-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\main\AndroidManifest.xml:48:21-70
+20
+21            <data android:mimeType="text/plain" />
+21-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\main\AndroidManifest.xml:49:13-50
+21-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\main\AndroidManifest.xml:49:19-48
+22        </intent>
+23        <intent>
+23-->[:file_picker] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:18
+24            <action android:name="android.intent.action.GET_CONTENT" />
+24-->[:file_picker] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-72
+24-->[:file_picker] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:21-69
+25
+26            <data android:mimeType="*/*" />
+26-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\main\AndroidManifest.xml:49:13-50
+26-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\main\AndroidManifest.xml:49:19-48
+27        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+28        <package android:name="com.google.android.apps.maps" />
+28-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sarit\.gradle\caches\transforms-3\95d4b229c7a7797fbda3b317d90e9b65\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+28-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sarit\.gradle\caches\transforms-3\95d4b229c7a7797fbda3b317d90e9b65\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+29    </queries>
+30
+31    <uses-permission android:name="android.permission.WAKE_LOCK" />
+31-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+31-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-65
+32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+32-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+32-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
+33    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+33-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
+33-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
+34    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+34-->[:location] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
+34-->[:location] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
+35    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+35-->[:location] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-79
+35-->[:location] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-76
+36
+37    <uses-feature
+37-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sarit\.gradle\caches\transforms-3\95d4b229c7a7797fbda3b317d90e9b65\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+38        android:glEsVersion="0x00020000"
+38-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sarit\.gradle\caches\transforms-3\95d4b229c7a7797fbda3b317d90e9b65\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+39        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+39-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sarit\.gradle\caches\transforms-3\95d4b229c7a7797fbda3b317d90e9b65\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+40    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+40-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:5-82
+40-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:26:22-79
+41    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+41-->[com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\sarit\.gradle\caches\transforms-3\b730ac7fef4c623b0cac45f55a844d48\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:9:5-98
+41-->[com.google.android.recaptcha:recaptcha:18.5.1] C:\Users\sarit\.gradle\caches\transforms-3\b730ac7fef4c623b0cac45f55a844d48\transformed\jetified-recaptcha-18.5.1\AndroidManifest.xml:9:22-95
+42
+43    <permission
+43-->[androidx.core:core:1.13.1] C:\Users\sarit\.gradle\caches\transforms-3\b2884dbf4ee3398b2907745768baeed2\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+44        android:name="com.example.chat_app_dexkor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.13.1] C:\Users\sarit\.gradle\caches\transforms-3\b2884dbf4ee3398b2907745768baeed2\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.13.1] C:\Users\sarit\.gradle\caches\transforms-3\b2884dbf4ee3398b2907745768baeed2\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.example.chat_app_dexkor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.13.1] C:\Users\sarit\.gradle\caches\transforms-3\b2884dbf4ee3398b2907745768baeed2\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.13.1] C:\Users\sarit\.gradle\caches\transforms-3\b2884dbf4ee3398b2907745768baeed2\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+48
+49    <application
+50        android:name="android.app.Application"
+51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+51-->[androidx.core:core:1.13.1] C:\Users\sarit\.gradle\caches\transforms-3\b2884dbf4ee3398b2907745768baeed2\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+52        android:debuggable="true"
+53        android:enableOnBackInvokedCallback="true"
+54        android:extractNativeLibs="false"
+55        android:icon="@mipmap/ic_launcher"
+56        android:label="chat_app_dexkor" > <!-- Enable this callback -->
+57
+58        <activity
+59            android:name="com.example.chat_app_dexkor.MainActivity"
+60            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+61            android:exported="true"
+62            android:hardwareAccelerated="true"
+63            android:launchMode="singleTop"
+64            android:taskAffinity=""
+65            android:theme="@style/LaunchTheme"
+66            android:windowSoftInputMode="adjustResize" >
+67            <meta-data
+68                android:name="io.flutter.embedding.android.NormalTheme"
+69                android:resource="@style/NormalTheme" />
+70
+71            <intent-filter>
+72                <action android:name="android.intent.action.MAIN" />
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+75            </intent-filter>
+76        </activity>
+77
+78        <service
+79            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+80            android:directBootAware="true"
+80-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:48:13-43
+81            android:exported="false" >
+82            <intent-filter>
+82-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+83                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+83-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+83-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+84            </intent-filter>
+85            <intent-filter android:priority="-500" >
+85-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+86                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+86-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+86-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+87            </intent-filter>
+88        </service>
+89
+90        <meta-data
+91            android:name="com.google.firebase.messaging.default_notification_channel_id"
+92            android:value="your_channel_id" />
+93        <meta-data
+94            android:name="flutterEmbedding"
+95            android:value="2" />
+96
+97        <service
+97-->[:cloud_firestore] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:19
+98            android:name="com.google.firebase.components.ComponentDiscoveryService"
+98-->[:cloud_firestore] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:8:18-89
+99            android:directBootAware="true"
+99-->[com.google.firebase:firebase-common:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\ae9174fb2605d2700770c56a341d2036\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+100            android:exported="false" >
+100-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:68:13-37
+101            <meta-data
+101-->[:cloud_firestore] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+102                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+102-->[:cloud_firestore] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-134
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[:cloud_firestore] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+104            <meta-data
+104-->[:firebase_app_check] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_app_check\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+105                android:name="com.google.firebase.components:io.flutter.plugins.firebase.appcheck.FlutterFirebaseAppRegistrar"
+105-->[:firebase_app_check] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_app_check\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-127
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[:firebase_app_check] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_app_check\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+107            <meta-data
+107-->[:firebase_auth] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+108                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+108-->[:firebase_auth] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[:firebase_auth] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+110            <meta-data
+110-->[:firebase_database] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+111                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+111-->[:firebase_database] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-127
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[:firebase_database] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+113            <meta-data
+113-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
+114                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+114-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
+116            <meta-data
+116-->[:firebase_storage] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+117                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+117-->[:firebase_storage] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-126
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[:firebase_storage] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+119            <meta-data
+119-->[:firebase_core] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+120                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+120-->[:firebase_core] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[:firebase_core] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:69:13-71:85
+123                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+123-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:70:17-109
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:71:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-appcheck-safetynet:16.1.2] C:\Users\sarit\.gradle\caches\transforms-3\a8f6912976a15b0b6e52005e2881925d\transformed\jetified-firebase-appcheck-safetynet-16.1.2\AndroidManifest.xml:27:13-29:85
+126                android:name="com.google.firebase.components:com.google.firebase.appcheck.safetynet.FirebaseAppCheckSafetyNetRegistrar"
+126-->[com.google.firebase:firebase-appcheck-safetynet:16.1.2] C:\Users\sarit\.gradle\caches\transforms-3\a8f6912976a15b0b6e52005e2881925d\transformed\jetified-firebase-appcheck-safetynet-16.1.2\AndroidManifest.xml:28:17-136
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-appcheck-safetynet:16.1.2] C:\Users\sarit\.gradle\caches\transforms-3\a8f6912976a15b0b6e52005e2881925d\transformed\jetified-firebase-appcheck-safetynet-16.1.2\AndroidManifest.xml:29:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-appcheck-debug:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\72305873e237aa1a8a24c0a6c595ce7a\transformed\jetified-firebase-appcheck-debug-18.0.0\AndroidManifest.xml:25:13-27:85
+129                android:name="com.google.firebase.components:com.google.firebase.appcheck.debug.FirebaseAppCheckDebugRegistrar"
+129-->[com.google.firebase:firebase-appcheck-debug:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\72305873e237aa1a8a24c0a6c595ce7a\transformed\jetified-firebase-appcheck-debug-18.0.0\AndroidManifest.xml:26:17-128
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-appcheck-debug:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\72305873e237aa1a8a24c0a6c595ce7a\transformed\jetified-firebase-appcheck-debug-18.0.0\AndroidManifest.xml:27:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\sarit\.gradle\caches\transforms-3\a1f26dab07b22eb69295acda9946574b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:17:13-19:85
+132                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+132-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\sarit\.gradle\caches\transforms-3\a1f26dab07b22eb69295acda9946574b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:18:17-122
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\sarit\.gradle\caches\transforms-3\a1f26dab07b22eb69295acda9946574b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:19:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\sarit\.gradle\caches\transforms-3\a1f26dab07b22eb69295acda9946574b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:20:13-22:85
+135                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+135-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\sarit\.gradle\caches\transforms-3\a1f26dab07b22eb69295acda9946574b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:21:17-111
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-firestore:25.1.1] C:\Users\sarit\.gradle\caches\transforms-3\a1f26dab07b22eb69295acda9946574b\transformed\jetified-firebase-firestore-25.1.1\AndroidManifest.xml:22:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-appcheck-playintegrity:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\bad8ec1dd9769599361ce9666df4faec\transformed\jetified-firebase-appcheck-playintegrity-18.0.0\AndroidManifest.xml:25:13-27:85
+138                android:name="com.google.firebase.components:com.google.firebase.appcheck.playintegrity.FirebaseAppCheckPlayIntegrityRegistrar"
+138-->[com.google.firebase:firebase-appcheck-playintegrity:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\bad8ec1dd9769599361ce9666df4faec\transformed\jetified-firebase-appcheck-playintegrity-18.0.0\AndroidManifest.xml:26:17-144
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-appcheck-playintegrity:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\bad8ec1dd9769599361ce9666df4faec\transformed\jetified-firebase-appcheck-playintegrity-18.0.0\AndroidManifest.xml:27:17-82
+140            <meta-data
+140-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:57:13-59:85
+141                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+141-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:58:17-122
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:59:17-82
+143            <meta-data
+143-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:60:13-62:85
+144                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+144-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:61:17-119
+145                android:value="com.google.firebase.components.ComponentRegistrar" />
+145-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:62:17-82
+146            <meta-data
+146-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\sarit\.gradle\caches\transforms-3\cdba0857b092b442bbd48e83adc4deef\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:30:13-32:85
+147                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+147-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\sarit\.gradle\caches\transforms-3\cdba0857b092b442bbd48e83adc4deef\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:31:17-118
+148                android:value="com.google.firebase.components.ComponentRegistrar" />
+148-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\sarit\.gradle\caches\transforms-3\cdba0857b092b442bbd48e83adc4deef\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:32:17-82
+149            <meta-data
+149-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\sarit\.gradle\caches\transforms-3\cdba0857b092b442bbd48e83adc4deef\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:33:13-35:85
+150                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+150-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\sarit\.gradle\caches\transforms-3\cdba0857b092b442bbd48e83adc4deef\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:34:17-107
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[com.google.firebase:firebase-storage:21.0.1] C:\Users\sarit\.gradle\caches\transforms-3\cdba0857b092b442bbd48e83adc4deef\transformed\jetified-firebase-storage-21.0.1\AndroidManifest.xml:35:17-82
+152            <meta-data
+152-->[com.google.firebase:firebase-database:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\4bedf519664d140a91a04b17b6eeae3b\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+153                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+153-->[com.google.firebase:firebase-database:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\4bedf519664d140a91a04b17b6eeae3b\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:30:17-120
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-database:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\4bedf519664d140a91a04b17b6eeae3b\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+155            <meta-data
+155-->[com.google.firebase:firebase-database:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\4bedf519664d140a91a04b17b6eeae3b\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+156                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+156-->[com.google.firebase:firebase-database:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\4bedf519664d140a91a04b17b6eeae3b\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-database:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\4bedf519664d140a91a04b17b6eeae3b\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\d811d7dec6ef27136f92b268b53ce29e\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:25:13-27:85
+159                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+159-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\d811d7dec6ef27136f92b268b53ce29e\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:26:17-120
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\d811d7dec6ef27136f92b268b53ce29e\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:27:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\d811d7dec6ef27136f92b268b53ce29e\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:28:13-30:85
+162                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+162-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\d811d7dec6ef27136f92b268b53ce29e\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:29:17-117
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-appcheck:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\d811d7dec6ef27136f92b268b53ce29e\transformed\jetified-firebase-appcheck-18.0.0\AndroidManifest.xml:30:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\51c96cb01ac80a42efb671e0d20c970a\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+165                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+165-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\51c96cb01ac80a42efb671e0d20c970a\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\51c96cb01ac80a42efb671e0d20c970a\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+167            <meta-data
+167-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\51c96cb01ac80a42efb671e0d20c970a\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+168                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+168-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\51c96cb01ac80a42efb671e0d20c970a\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\sarit\.gradle\caches\transforms-3\51c96cb01ac80a42efb671e0d20c970a\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+170            <meta-data
+170-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\44fe30ab51c511c3d2dafdd532238319\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+171                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+171-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\44fe30ab51c511c3d2dafdd532238319\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\44fe30ab51c511c3d2dafdd532238319\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-common:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\ae9174fb2605d2700770c56a341d2036\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+174                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+174-->[com.google.firebase:firebase-common:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\ae9174fb2605d2700770c56a341d2036\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-common:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\ae9174fb2605d2700770c56a341d2036\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+176            <meta-data
+176-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\sarit\.gradle\caches\transforms-3\8add4aeb871735f9490d3fada82bdd55\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+177                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+177-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\sarit\.gradle\caches\transforms-3\8add4aeb871735f9490d3fada82bdd55\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\sarit\.gradle\caches\transforms-3\8add4aeb871735f9490d3fada82bdd55\transformed\jetified-firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+179        </service>
+180        <service
+180-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
+181            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+181-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
+182            android:exported="false"
+182-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+183            android:permission="android.permission.BIND_JOB_SERVICE" />
+183-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
+184        <service
+184-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
+185            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+185-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
+186            android:exported="false" >
+186-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
+187            <intent-filter>
+187-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+188                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+188-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+188-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+189            </intent-filter>
+190        </service>
+191
+192        <receiver
+192-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
+193            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+193-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
+194            android:exported="true"
+194-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
+195            android:permission="com.google.android.c2dm.permission.SEND" >
+195-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
+196            <intent-filter>
+196-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+197                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+197-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+197-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+198            </intent-filter>
+199        </receiver>
+200
+201        <provider
+201-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
+202            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+202-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
+203            android:authorities="com.example.chat_app_dexkor.flutterfirebasemessaginginitprovider"
+203-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
+204            android:exported="false"
+204-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
+205            android:initOrder="99" />
+205-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
+206        <provider
+206-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:9-17:20
+207            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+207-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-82
+208            android:authorities="com.example.chat_app_dexkor.flutter.image_provider"
+208-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+209            android:exported="false"
+209-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+210            android:grantUriPermissions="true" >
+210-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-47
+211            <meta-data
+211-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-16:75
+212                android:name="android.support.FILE_PROVIDER_PATHS"
+212-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-67
+213                android:resource="@xml/flutter_image_picker_file_paths" />
+213-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-72
+214        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+215        <service
+215-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-31:19
+216            android:name="com.google.android.gms.metadata.ModuleDependencies"
+216-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-78
+217            android:enabled="false"
+217-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-36
+218            android:exported="false" >
+218-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+219            <intent-filter>
+219-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-26:29
+220                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+220-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-94
+220-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:25:25-91
+221            </intent-filter>
+222
+223            <meta-data
+223-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-30:36
+224                android:name="photopicker_activity:0:required"
+224-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-63
+225                android:value="" />
+225-->[:image_picker_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:30:17-33
+226        </service>
+227        <service
+227-->[:location] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-15:56
+228            android:name="com.lyokone.location.FlutterLocationService"
+228-->[:location] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-71
+229            android:enabled="true"
+229-->[:location] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-35
+230            android:exported="false"
+230-->[:location] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
+231            android:foregroundServiceType="location" />
+231-->[:location] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-53
+232
+233        <activity
+233-->[:url_launcher_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+234            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+234-->[:url_launcher_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+235            android:exported="false"
+235-->[:url_launcher_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+236            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- Needs to be explicitly declared on P+ -->
+236-->[:url_launcher_android] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+237        <uses-library
+237-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sarit\.gradle\caches\transforms-3\95d4b229c7a7797fbda3b317d90e9b65\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+238            android:name="org.apache.http.legacy"
+238-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sarit\.gradle\caches\transforms-3\95d4b229c7a7797fbda3b317d90e9b65\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+239            android:required="false" />
+239-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sarit\.gradle\caches\transforms-3\95d4b229c7a7797fbda3b317d90e9b65\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+240
+241        <activity
+241-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:29:9-46:20
+242            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+242-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:30:13-80
+243            android:excludeFromRecents="true"
+243-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:31:13-46
+244            android:exported="true"
+244-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:32:13-36
+245            android:launchMode="singleTask"
+245-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:33:13-44
+246            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+246-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:34:13-72
+247            <intent-filter>
+247-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:35:13-45:29
+248                <action android:name="android.intent.action.VIEW" />
+248-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+248-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+249
+250                <category android:name="android.intent.category.DEFAULT" />
+250-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+250-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+251                <category android:name="android.intent.category.BROWSABLE" />
+251-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+251-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+252
+253                <data
+253-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\main\AndroidManifest.xml:49:13-50
+254                    android:host="firebase.auth"
+255                    android:path="/"
+256                    android:scheme="genericidp" />
+257            </intent-filter>
+258        </activity>
+259        <activity
+259-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:47:9-64:20
+260            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+260-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:48:13-79
+261            android:excludeFromRecents="true"
+261-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:49:13-46
+262            android:exported="true"
+262-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:50:13-36
+263            android:launchMode="singleTask"
+263-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:51:13-44
+264            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+264-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:52:13-72
+265            <intent-filter>
+265-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:53:13-63:29
+266                <action android:name="android.intent.action.VIEW" />
+266-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:17-69
+266-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:36:25-66
+267
+268                <category android:name="android.intent.category.DEFAULT" />
+268-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:17-76
+268-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:38:27-73
+269                <category android:name="android.intent.category.BROWSABLE" />
+269-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:17-78
+269-->[com.google.firebase:firebase-auth:23.1.0] C:\Users\sarit\.gradle\caches\transforms-3\c09c3099a3721c0c49d8dd96e1550736\transformed\jetified-firebase-auth-23.1.0\AndroidManifest.xml:39:27-75
+270
+271                <data
+271-->C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\android\app\src\main\AndroidManifest.xml:49:13-50
+272                    android:host="firebase.auth"
+273                    android:path="/"
+274                    android:scheme="recaptcha" />
+275            </intent-filter>
+276        </activity>
+277
+278        <service
+278-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+279            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+279-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+280            android:enabled="true"
+280-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+281            android:exported="false" >
+281-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+282            <meta-data
+282-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+283                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+283-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+284                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+284-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+285        </service>
+286
+287        <activity
+287-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+288            android:name="androidx.credentials.playservices.HiddenActivity"
+288-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+289            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+289-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+290            android:enabled="true"
+290-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+291            android:exported="false"
+291-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+292            android:fitsSystemWindows="true"
+292-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+293            android:theme="@style/Theme.Hidden" >
+293-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\sarit\.gradle\caches\transforms-3\d1203d5e6c60912004b024317ed93069\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+294        </activity>
+295        <activity
+295-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\e8eebe946c6940fabdc543d2e57b0a2e\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:23:9-27:75
+296            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+296-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\e8eebe946c6940fabdc543d2e57b0a2e\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:24:13-93
+297            android:excludeFromRecents="true"
+297-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\e8eebe946c6940fabdc543d2e57b0a2e\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:25:13-46
+298            android:exported="false"
+298-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\e8eebe946c6940fabdc543d2e57b0a2e\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:26:13-37
+299            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+299-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\e8eebe946c6940fabdc543d2e57b0a2e\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:27:13-72
+300        <!--
+301            Service handling Google Sign-In user revocation. For apps that do not integrate with
+302            Google Sign-In, this service will never be started.
+303        -->
+304        <service
+304-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\e8eebe946c6940fabdc543d2e57b0a2e\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:33:9-37:51
+305            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+305-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\e8eebe946c6940fabdc543d2e57b0a2e\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:34:13-89
+306            android:exported="true"
+306-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\e8eebe946c6940fabdc543d2e57b0a2e\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:35:13-36
+307            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+307-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\e8eebe946c6940fabdc543d2e57b0a2e\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:36:13-107
+308            android:visibleToInstantApps="true" />
+308-->[com.google.android.gms:play-services-auth:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\e8eebe946c6940fabdc543d2e57b0a2e\transformed\jetified-play-services-auth-21.0.0\AndroidManifest.xml:37:13-48
+309
+310        <receiver
+310-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:29:9-40:20
+311            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+311-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:30:13-78
+312            android:exported="true"
+312-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:31:13-36
+313            android:permission="com.google.android.c2dm.permission.SEND" >
+313-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:32:13-73
+314            <intent-filter>
+314-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+315                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+315-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+315-->[:firebase_messaging] C:\Users\sarit\Desktop\FLOODPREDICTIONAPP\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+316            </intent-filter>
+317
+318            <meta-data
+318-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:37:13-39:40
+319                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+319-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:38:17-92
+320                android:value="true" />
+320-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\sarit\.gradle\caches\transforms-3\b8338217fe7838912d3262146ed5361b\transformed\jetified-firebase-messaging-24.1.0\AndroidManifest.xml:39:17-37
+321        </receiver>
+322
+323        <activity
+323-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\sarit\.gradle\caches\transforms-3\f02f3cca9170ce7f73792140510cdd35\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+324            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+324-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\sarit\.gradle\caches\transforms-3\f02f3cca9170ce7f73792140510cdd35\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+325            android:exported="false"
+325-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\sarit\.gradle\caches\transforms-3\f02f3cca9170ce7f73792140510cdd35\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+326            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+326-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\sarit\.gradle\caches\transforms-3\f02f3cca9170ce7f73792140510cdd35\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+327
+328        <provider
+328-->[com.google.firebase:firebase-common:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\ae9174fb2605d2700770c56a341d2036\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+329            android:name="com.google.firebase.provider.FirebaseInitProvider"
+329-->[com.google.firebase:firebase-common:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\ae9174fb2605d2700770c56a341d2036\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+330            android:authorities="com.example.chat_app_dexkor.firebaseinitprovider"
+330-->[com.google.firebase:firebase-common:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\ae9174fb2605d2700770c56a341d2036\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+331            android:directBootAware="true"
+331-->[com.google.firebase:firebase-common:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\ae9174fb2605d2700770c56a341d2036\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+332            android:exported="false"
+332-->[com.google.firebase:firebase-common:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\ae9174fb2605d2700770c56a341d2036\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+333            android:initOrder="100" />
+333-->[com.google.firebase:firebase-common:21.0.0] C:\Users\sarit\.gradle\caches\transforms-3\ae9174fb2605d2700770c56a341d2036\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+334
+335        <uses-library
+335-->[androidx.window:window:1.2.0] C:\Users\sarit\.gradle\caches\transforms-3\f8ec00f3fcc9d3a9a9c66e73a873b76c\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+336            android:name="androidx.window.extensions"
+336-->[androidx.window:window:1.2.0] C:\Users\sarit\.gradle\caches\transforms-3\f8ec00f3fcc9d3a9a9c66e73a873b76c\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+337            android:required="false" />
+337-->[androidx.window:window:1.2.0] C:\Users\sarit\.gradle\caches\transforms-3\f8ec00f3fcc9d3a9a9c66e73a873b76c\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+338        <uses-library
+338-->[androidx.window:window:1.2.0] C:\Users\sarit\.gradle\caches\transforms-3\f8ec00f3fcc9d3a9a9c66e73a873b76c\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+339            android:name="androidx.window.sidecar"
+339-->[androidx.window:window:1.2.0] C:\Users\sarit\.gradle\caches\transforms-3\f8ec00f3fcc9d3a9a9c66e73a873b76c\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+340            android:required="false" />
+340-->[androidx.window:window:1.2.0] C:\Users\sarit\.gradle\caches\transforms-3\f8ec00f3fcc9d3a9a9c66e73a873b76c\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+341
+342        <meta-data
+342-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\sarit\.gradle\caches\transforms-3\ab921d2504dc4ffdb3a2cd4464883cfe\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+343            android:name="com.google.android.gms.version"
+343-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\sarit\.gradle\caches\transforms-3\ab921d2504dc4ffdb3a2cd4464883cfe\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+344            android:value="@integer/google_play_services_version" />
+344-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\sarit\.gradle\caches\transforms-3\ab921d2504dc4ffdb3a2cd4464883cfe\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+345
+346        <provider
+346-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sarit\.gradle\caches\transforms-3\2cde72fe132e920ad7a2e2d1624dc792\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+347            android:name="androidx.startup.InitializationProvider"
+347-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sarit\.gradle\caches\transforms-3\2cde72fe132e920ad7a2e2d1624dc792\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+348            android:authorities="com.example.chat_app_dexkor.androidx-startup"
+348-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sarit\.gradle\caches\transforms-3\2cde72fe132e920ad7a2e2d1624dc792\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+349            android:exported="false" >
+349-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sarit\.gradle\caches\transforms-3\2cde72fe132e920ad7a2e2d1624dc792\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+350            <meta-data
+350-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sarit\.gradle\caches\transforms-3\2cde72fe132e920ad7a2e2d1624dc792\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+351                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+351-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sarit\.gradle\caches\transforms-3\2cde72fe132e920ad7a2e2d1624dc792\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+352                android:value="androidx.startup" />
+352-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sarit\.gradle\caches\transforms-3\2cde72fe132e920ad7a2e2d1624dc792\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+353            <meta-data
+353-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+354                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+354-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+355                android:value="androidx.startup" />
+355-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+356        </provider>
+357
+358        <receiver
+358-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+359            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+359-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+360            android:directBootAware="false"
+360-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+361            android:enabled="true"
+361-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+362            android:exported="true"
+362-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+363            android:permission="android.permission.DUMP" >
+363-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+364            <intent-filter>
+364-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+365                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+365-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+365-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+366            </intent-filter>
+367            <intent-filter>
+367-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+368                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+368-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+368-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+369            </intent-filter>
+370            <intent-filter>
+370-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+371                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+371-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+371-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+372            </intent-filter>
+373            <intent-filter>
+373-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+374                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+374-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+374-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sarit\.gradle\caches\transforms-3\e080b70ddc4c24ec0f58ebf52f1f6b5c\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+375            </intent-filter>
+376        </receiver>
+377
+378        <service
+378-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\487ed0df0d079798fc4186bd5b57b10c\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+379            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+379-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\487ed0df0d079798fc4186bd5b57b10c\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+380            android:exported="false" >
+380-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\487ed0df0d079798fc4186bd5b57b10c\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+381            <meta-data
+381-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\487ed0df0d079798fc4186bd5b57b10c\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+382                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+382-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\487ed0df0d079798fc4186bd5b57b10c\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+383                android:value="cct" />
+383-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\487ed0df0d079798fc4186bd5b57b10c\transformed\jetified-transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+384        </service>
+385        <service
+385-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\f4fca8e5526101352b639ab1747152f2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+386            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+386-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\f4fca8e5526101352b639ab1747152f2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+387            android:exported="false"
+387-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\f4fca8e5526101352b639ab1747152f2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+388            android:permission="android.permission.BIND_JOB_SERVICE" >
+388-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\f4fca8e5526101352b639ab1747152f2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+389        </service>
+390
+391        <receiver
+391-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\f4fca8e5526101352b639ab1747152f2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+392            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+392-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\f4fca8e5526101352b639ab1747152f2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+393            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+393-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\sarit\.gradle\caches\transforms-3\f4fca8e5526101352b639ab1747152f2\transformed\jetified-transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+394        <activity
+394-->[com.google.android.play:core-common:2.0.3] C:\Users\sarit\.gradle\caches\transforms-3\22fae1222ad5adc939f1d612ad3b937f\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+395            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+395-->[com.google.android.play:core-common:2.0.3] C:\Users\sarit\.gradle\caches\transforms-3\22fae1222ad5adc939f1d612ad3b937f\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:15:13-93
+396            android:exported="false"
+396-->[com.google.android.play:core-common:2.0.3] C:\Users\sarit\.gradle\caches\transforms-3\22fae1222ad5adc939f1d612ad3b937f\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:16:13-37
+397            android:stateNotNeeded="true"
+397-->[com.google.android.play:core-common:2.0.3] C:\Users\sarit\.gradle\caches\transforms-3\22fae1222ad5adc939f1d612ad3b937f\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:17:13-42
+398            android:theme="@style/Theme.PlayCore.Transparent" />
+398-->[com.google.android.play:core-common:2.0.3] C:\Users\sarit\.gradle\caches\transforms-3\22fae1222ad5adc939f1d612ad3b937f\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:18:13-62
+399    </application>
+400
+401</manifest>

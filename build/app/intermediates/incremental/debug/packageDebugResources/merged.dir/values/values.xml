@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">941174712433</string>
+    <string name="google_api_key" translatable="false">AIzaSyCSmN0eeg13KtafXOZjyhw5bGRXePMrIDQ</string>
+    <string name="google_app_id" translatable="false">1:941174712433:android:3886163bee2ae97fc213d0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCSmN0eeg13KtafXOZjyhw5bGRXePMrIDQ</string>
+    <string name="google_storage_bucket" translatable="false">floodpredictionapp.firebasestorage.app</string>
+    <string name="project_id" translatable="false">floodpredictionapp</string>
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+</resources>

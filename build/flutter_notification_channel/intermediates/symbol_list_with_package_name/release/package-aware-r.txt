@@ -1,0 +1,1 @@
+com.softmaestri.notification.channel.flutter_notification_channel
